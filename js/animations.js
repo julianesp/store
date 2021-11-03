@@ -47,3 +47,13 @@ function atras() {
 }
 
 //----------------------------------------
+
+//anuncios con swal para página de registro
+function without_register() {
+    let touch = document.getElementById("register")
+    let show_message = touch
+
+    if (show_message.addEventListener('click')) {
+        return swal('Página en construcción')
+    }
+}
