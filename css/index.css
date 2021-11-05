@@ -920,6 +920,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 footer .info-desa h3 {
@@ -949,8 +950,12 @@ footer .social-desa h1 {
 
 footer .social-desa a img {
     width: 40px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     /* padding-top: 20px; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
 }
 
 footer .social-desa h3 {
@@ -996,19 +1001,19 @@ footer .social-desa .redes {
 
 @keyframes retraso {
     0% {
-        transform: translateX(-400px);
+        transform: translateX(-300px);
     }
     30% {
         transform: rotateX(0deg) rotateY(-180deg);
     }
     50% {
-        transform: translateX(-180px);
+        transform: translateX(-100px);
     }
     80% {
         transform: rotateX(0deg) rotateY(-180deg);
     }
     100% {
-        transform: translateX(0);
+        transform: translateX(50px);
     }
 }
 
