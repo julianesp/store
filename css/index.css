@@ -981,6 +981,7 @@ footer .social-desa .redes {
     top: 92%;
     left: 310px;
     animation-name: retraso;
+    animation-delay: 2s;
     animation-duration: 2s;
     animation-timing-function: ease-out;
 }
