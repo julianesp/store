@@ -950,12 +950,7 @@ footer .social-desa h1 {
 
 footer .social-desa a img {
     width: 40px;
-    /* margin-left: 10px; */
-    /* padding-top: 20px; */
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
 }
 
 footer .social-desa h3 {
@@ -964,11 +959,6 @@ footer .social-desa h3 {
     font-weight: 300;
     color: white;
     margin-bottom: 30px;
-}
-
-footer .social-desa h3 img {
-    width: 30px;
-    padding-right: 10px;
 }
 
 footer .fuentes h3 {
@@ -987,35 +977,51 @@ footer .fuentes p {
 }
 
 footer .social-desa .redes {
-    /* display: flex;
-    flex-direction: column; */
     position: fixed;
-    top: 90%;
-    /* left: 0; */
-    right: 10px;
+    top: 92%;
+    left: 310px;
     animation-name: retraso;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-timing-function: ease-out;
-    animation-timing-function: ease-in-out;
 }
 
 @keyframes retraso {
     0% {
         transform: translateX(-300px);
     }
-    30% {
-        transform: rotateX(0deg) rotateY(-180deg);
-    }
     50% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(1.2);
+    }
+    /* 70% {
         transform: translateX(-100px);
-    }
-    80% {
-        transform: rotateX(0deg) rotateY(-180deg);
-    }
+    } */
     100% {
-        transform: translateX(50px);
+        transform: translateX(0);
     }
 }
+
+footer .social-desa .redes .punsar {
+    animation-name: punsar;
+    animation-duration: 1s;
+    animation-iteration-count: 2;
+    animation-delay: 5s;
+    animation-timing-function: steps(3, 2);
+}
+
+@keyframes punsar {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+
+/*---------------------------------*/
 
 @media screen and (min-width: 768px) {
     .contenido .presentacion .slider .slides .navigation-manual {
