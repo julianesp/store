@@ -276,6 +276,7 @@ h2:hover {
     bottom: 0;
     background-color: #baba;
     width: 100vw;
+    z-index: 50;
 }
 
 .contenido .desarrollo p {
