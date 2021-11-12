@@ -981,10 +981,10 @@ footer .social-desa .redes {
     position: fixed;
     top: 92%;
     left: 310px;
-    animation-name: retraso;
+    animation-name: retraso, punsar;
+    animation-duration: 2s, 6s;
+    /* animation-timing-function: ease-in-out; */
     /* animation-delay: 2s; */
-    animation-duration: 2s;
-    animation-timing-function: ease-out;
 }
 
 @keyframes retraso {
@@ -992,16 +992,25 @@ footer .social-desa .redes {
         transform: translateX(-300px);
     }
     50% {
-        transform: scale(1);
+        transform: translateX(-150px);
     }
     60% {
-        transform: scale(1.2);
+        /* transform: scale(1.2); */
     }
     /* 70% {
         transform: translateX(-100px);
     } */
     100% {
         transform: translateX(0);
+    }
+}
+
+@keyframes punsar {
+    0% {
+        /* transform: scale(1); */
+    }
+    100% {
+        transform: scale(1.2);
     }
 }
 
