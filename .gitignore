@@ -1,3 +1,6 @@
 .png
 .jpg
 .scv
+
+#esta carpeta no se enviará a GitHub
+node_modules/
