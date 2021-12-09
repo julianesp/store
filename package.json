@@ -1,22 +1,33 @@
 {
-  "name": "store",
-  "version": "1.0.0",
-  "description": "Incluyendo código de Node en la tienda\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[3~\u001b[3~\u001b[3~\u001b[3~\u001b[C\u001bmi",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/julianesp/store.git"
-  },
-  "author": "Julián España",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/julianesp/store/issues"
-  },
-  "homepage": "https://github.com/julianesp/store#readme",
-  "devDependencies": {
-    "moment": "^2.29.1"
-  }
+    "name": "store",
+    "version": "1.0.0",
+    "description": "Incluyendo código de Node en la tienda\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[3~\u001b[3~\u001b[3~\u001b[3~\u001b[C\u001bmi",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "webpack --mode production"
+    },
+    "start": "webpack-dev-server --open --mode development",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/julianesp/store.git"
+    },
+    "author": "Julián España",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/julianesp/store/issues"
+    },
+    "homepage": "https://github.com/julianesp/store#readme",
+    "devDependencies": {
+        "date-fns": "^2.27.0",
+        "moment": "^2.29.1",
+        "webpack-cli": "^4.9.1"
+    },
+    "dependencies": {
+        "webpack": "^5.64.4"
+    },
+    "bin": {
+        "saludos-aleatorio": "./bin/global.js"
+    },
+    "preferGlobal": true
 }

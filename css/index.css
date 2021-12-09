@@ -599,9 +599,9 @@ h2:hover {
 }
 
 .contenido .accesorios .accesorio::-webkit-scrollbar {
-        height: 15px;
-        background: #fff;
-        border-radius: 5px;
+    height: 15px;
+    background: #fff;
+    border-radius: 5px;
 }
 
 .contenido .accesorios .accesorio::-webkit-scrollbar-thumb {
@@ -951,7 +951,6 @@ footer .social-desa h1 {
 
 footer .social-desa a img {
     width: 40px;
-    position: absolute;
 }
 
 footer .social-desa h3 {
